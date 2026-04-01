@@ -40,3 +40,13 @@ def test_five():
     )
     for number in numbers:
         assert fizz_buzz_whiz(number) == "Buzz"
+
+
+def test_three():
+    numbers = (
+        numbers_divisible_by_three
+        - numbers_divisible_by_three_and_five
+        - primes_up_to_100
+    )
+    for number in numbers:
+        assert fizz_buzz_whiz(number) == "Fizz"
