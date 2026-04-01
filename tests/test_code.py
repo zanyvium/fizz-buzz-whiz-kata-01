@@ -4,8 +4,8 @@ from src.kata.code import NUMBERS_UP_TO, fizz_buzz_whiz
 # Code will return "Fizz" for divisible with 3 <- COMPLETE
 # Code will return "Buzz" for divisible with 5 <- COMPLETE
 # Code will return "FizzBuzz" for divisible with 3 and 5 <- COMPLETE
-# Code will return identity if there are no other rules <- NEXT!
-# Code will apply rules in correct restrictive order: -> prime -> 3&5 -> 5 -> 3 -> string of identity
+# Code will return identity if there are no other rules <- COMPLETE
+# Code will apply rules in correct restrictive order: -> prime -> 3&5 -> 5 -> 3 -> string of identity <- COMPLETE
 
 # fmt: off
 primes_up_to_100 = {
