@@ -50,3 +50,15 @@ def test_three():
     )
     for number in numbers:
         assert fizz_buzz_whiz(number) == "Fizz"
+
+
+def test_others():
+    all_numbers = set(number for number in range(1, NUMBERS_UP_TO + 1, 1))
+    numbers = (
+        all_numbers
+        - primes_up_to_100
+        - numbers_divisible_by_five
+        - numbers_divisible_by_three
+    )
+    for number in numbers:
+        assert fizz_buzz_whiz(number) == str(number)
