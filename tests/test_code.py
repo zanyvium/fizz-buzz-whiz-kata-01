@@ -12,4 +12,4 @@ primes_up_to_100 = [
 
 def test_tmp_identity():
     for number in primes_up_to_100:
-        assert fizz_buzz_whiz(number) == number
+        assert fizz_buzz_whiz(number) == str(number)
