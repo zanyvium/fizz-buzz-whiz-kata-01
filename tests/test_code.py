@@ -16,6 +16,6 @@ primes_up_to_100 = [
 # fmt: on
 
 
-def test_tmp_identity():
+def test_primes():
     for number in primes_up_to_100:
         assert fizz_buzz_whiz(number) == "Whiz"
