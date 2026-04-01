@@ -19,3 +19,5 @@ def fizz_buzz_whiz(number: int) -> str:
         return "Whiz"
     elif number % 3 == 0 and number % 5 == 0:
         return "FizzBuzz"
+    elif number % 5 == 0:
+        return "Buzz"
