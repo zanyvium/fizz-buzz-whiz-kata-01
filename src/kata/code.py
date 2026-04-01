@@ -15,9 +15,11 @@ def is_prime(n: int) -> bool:
 
 
 def fizz_buzz_whiz(number: int) -> str:
+    number_div_by_5 = number % 5 == 0
+    number_div_by_3 = number % 3 == 0
     if is_prime(number):
         return "Whiz"
-    elif number % 3 == 0 and number % 5 == 0:
+    elif number_div_by_3 and number_div_by_5:
         return "FizzBuzz"
-    elif number % 5 == 0:
+    elif number_div_by_5:
         return "Buzz"
