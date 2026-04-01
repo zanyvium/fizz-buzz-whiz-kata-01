@@ -1,7 +1,7 @@
 from src.kata.code import NUMBERS_UP_TO, fizz_buzz_whiz
 
 # Code will return "Whiz" for primes <- COMPLETE
-# Code will return "Fizz" for divisible with 3 <- NEXT!
+# Code will return "Fizz" for divisible with 3 <- COMPLETE
 # Code will return "Buzz" for divisible with 5 <- COMPLETE
 # Code will return "FizzBuzz" for divisible with 3 and 5 <- COMPLETE
 # Code will return identity if there are no other rules
