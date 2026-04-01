@@ -15,11 +15,11 @@ primes_up_to_100 = [
 ] 
 # fmt: on
 
-numbers_divisible_by_three = [x for x in range(3, NUMBERS_UP_TO + 1, 3)]
-numbers_divisible_by_five = [x for x in range(5, NUMBERS_UP_TO + 1, 5)]
-numbers_divisible_by_three_and_five = [
-    x for x in numbers_divisible_by_three if x in numbers_divisible_by_five
-]
+numbers_divisible_by_three = {x for x in range(3, NUMBERS_UP_TO + 1, 3)}
+numbers_divisible_by_five = {x for x in range(5, NUMBERS_UP_TO + 1, 5)}
+numbers_divisible_by_three_and_five = (
+    numbers_divisible_by_three & numbers_divisible_by_five
+)
 
 
 def test_primes():
@@ -30,3 +30,9 @@ def test_primes():
 def test_three_and_five():
     for number in numbers_divisible_by_three_and_five:
         assert fizz_buzz_whiz(number) == "FizzBuzz"
+
+
+def test_five():
+    numbers = numbers_divisible_by_five - numbers_divisible_by_three
+    for number in numbers:
+        assert fizz_buzz_whiz(number) == "Buzz"
