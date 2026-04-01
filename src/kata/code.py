@@ -17,3 +17,5 @@ def is_prime(n: int) -> bool:
 def fizz_buzz_whiz(number: int) -> str:
     if is_prime(number):
         return "Whiz"
+    elif number % 3 == 0 and number % 5 == 0:
+        return "FizzBuzz"
